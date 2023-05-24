@@ -1,0 +1,23 @@
+<div class="home">
+    <div class="container">
+        <div class="sub-container1">
+            <img src="assets/Logo-03 1.svg" alt="logo-inicie">
+            <h1 class="text-container">Explore o mundo dos <span>Pokémons</span></h1>
+            <p>Descubra todas as espécies de Pokémons</p>
+            
+            <form id="search">
+                <input type="text" #busca_poke required autocomplete="off" placeholder="Buscar Pokemon...">
+                <button class="buscar" type="button" [disabled]="!busca_poke.value">Buscar</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="pokedex-procurados">
+        <div class="pokedex__container">
+            <div class="poke-title-button">
+                <h1>Mais procurados</h1>
+            </div>  
+            <app-slider-pokemons></app-slider-pokemons>
+        </div>
+    </div>
+</div>

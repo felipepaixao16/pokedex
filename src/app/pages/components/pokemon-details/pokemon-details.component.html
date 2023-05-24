@@ -1,0 +1,35 @@
+<div class="page-details">
+        <div class="container">
+            <div class="sub-container1">
+                <a [routerLink]="['/home']"><img src="assets/Logo-03 1.svg" alt="logo-inicie"></a>
+                <p class="text-container">{{ pokemon[0].name | titlecase }}</p>
+                <span class="text-container__tipe">
+                    <p>Cod: #00{{ pokemon[0].id | number: '0.0-0' }}</p>
+                    <p>Tipo: <span style= "color: #ffff; background: {{ pokemon[1].color.name }};">{{ pokemon[0].types[0].type.name | titlecase }}</span></p>
+                </span>
+                <span class="text-container__about">
+                    <h1>Descrição</h1>
+                    <p>"{{ pokemon[1].flavor_text_entries[51].flavor_text }}"</p>
+                </span>
+                <span class="text-container__bio">
+                    <p>Vida </p>
+                    <p>Defesa </p>
+                    <p>Velocidade </p>
+                    <p>Ataque </p>
+                </span>
+            </div>
+        </div>
+
+        <div class="pokem-id">
+            <img class="pokem-id__img" [src]="pokemon[0].sprites.other.dream_world.front_default" alt="{{ pokemon.name }}">
+        </div>
+
+        <div class="main">
+            <div class="pokedex-procurados">
+                <div class="poke-title-button">
+                    <h1>Mais procurados</h1>
+                </div>  
+                <app-slider-pokemons></app-slider-pokemons>
+            </div>
+        </div>
+</div>

@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    font-family: Nunito;  
+    background-color: #eff4fa;  
+    width: 100vw;
+}
+
+html {
+  background: #FBFDFF;
+}
+
+:root {
+    --font-text: 'Nunito Sans', sans-serif;
+    --background-contain: #FBFDFF;
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url("./assets/fonts/Nunito-Regular.ttf") format("truetype");
+    font-weight: 600;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Nunito";
+    src: url("./assets/fonts/Nunito-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-display: swap;
+  }

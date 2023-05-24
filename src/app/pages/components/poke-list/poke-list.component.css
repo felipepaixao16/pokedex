@@ -1,0 +1,103 @@
+.pokedex {
+    padding: 0px 32px 20px 0px;
+    display: inline-block;
+}
+
+.pokedex__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #FBFDFF;
+    width: 221px;
+    height: 271px;
+    border-radius: 2px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.pokedex__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 210px;
+    margin: 0 6px;
+}
+
+.pokedex__top h2 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    color: #233674;
+}
+
+.pokedex__top p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #233674;
+}
+
+.pokedex__imagem {
+    width: 222px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pokedex__imagem img {
+    position: absolute;
+    width: 124px;
+    height: 122px;
+    display: block;
+    margin: 0;
+}
+
+.pokedex__footer {
+    margin: 136px 6px 0px 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pokedex__footer-one {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 210px;
+    text-align: start;
+    margin-bottom: -30px;
+}
+
+.pokedex__footer-two {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 210px;
+    text-align: start;
+}
+
+.pokedex__footer h3 {
+    color: #233674;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.pokedex__footer p {
+    text-align: center;
+    font-weight: 600;
+    color: #233674;
+    font-family: 'Nunito';
+    font-size: 16px;
+}

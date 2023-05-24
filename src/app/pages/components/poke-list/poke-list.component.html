@@ -1,0 +1,23 @@
+<ng-template ngFor let-pokemon [ngForOf]="getAllPokemons">
+    <div class="pokedex">
+        <a [routerLink]="['details', pokemon.status.id]" *ngIf="pokemon.status" class="pokedex__card">
+            <span class="pokedex__top">
+                <h2>{{ pokemon.name }}</h2>
+                <p>#0{{ pokemon.status.id }}</p>
+            </span>
+            <section class="pokedex__imagem">
+                <img [src]="pokemon.status.sprites.other.dream_world.front_default" alt="{{ pokemon.name }}">
+            </section>
+            <section class="pokedex__footer">
+                <span class="pokedex__footer-one">
+                    <h3>Altura:</h3>
+                    <p>{{ pokemon.status.height }} cm</p>
+                </span>
+                <span class="pokedex__footer-two">
+                    <h3>Peso:</h3>
+                    <p>{{ pokemon.status.weight }} kg</p>
+                </span>
+            </section>
+        </a>
+    </div>
+</ng-template>

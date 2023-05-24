@@ -1,0 +1,141 @@
+.page-details {
+    background: #EFF4FA;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    position: absolute;
+    height: 493px;
+    top: 16px;
+    left: 10%;
+}
+
+.sub-container1 img {
+    width: 110px;
+    height: 78px;
+    margin-left: 29px;
+    cursor: pointer;
+}
+
+.text-container {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 48px;
+    text-align: center;
+    color: #233674;
+    margin-top: -25px;
+    width: 198px;
+}
+
+.text-container__tipe {
+    position: absolute;
+    top: 110px;
+    display: flex;
+    flex-direction: row;
+    gap: 264px;
+}
+
+.text-container__tipe p {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: start;
+    color: #233674;
+    min-inline-size: max-content;
+}
+
+.text-container__tipe p span {
+    padding: 0 4px;
+    border-radius: 2px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    text-align: start;
+    min-inline-size: max-content;
+}
+
+.text-container__about {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.text-container__about h1 {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    color: #233674;
+}
+
+.text-container__about p {
+    position: absolute;
+    top: 185px;
+    width: 548px;
+    height: 66px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #233674;
+}
+
+
+.text-container__bio {
+    position: absolute;
+    top: 280px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: start;
+    color: #233674;
+}
+
+.pokem-id {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 65vw;
+    top: 5vh;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    width: 423px;
+    height: 419px;
+}
+
+.pokem-id__img {
+    position: absolute;
+    max-width: 376px;
+    max-height: 396px;
+}
+
+.main {
+    margin-top: 4%;
+    margin-left: 10%;
+}
+
+.poke-title-button {
+    margin-bottom: 20px;
+}
+
+.poke-title-button h1 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    color: #2F3E77;
+}
