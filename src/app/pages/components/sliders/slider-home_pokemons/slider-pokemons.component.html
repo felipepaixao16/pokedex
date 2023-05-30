@@ -1,0 +1,49 @@
+<!--
+<swiper
+  class="mt-4"
+  [slidesPerView]="1"
+  [spaceBetween]="10"
+  [grabCursor]="true"
+  [autoplay]="{
+    delay: 3000,
+    disableOnInteraction: false
+  }"
+  [parallax]="true"
+  [navigation]="true"
+  [breakpoints]="{
+    '@0.00': {
+      slidesPerView: 1.2,
+      spaceBetween: 5
+    },
+    '@0.75': {
+      slidesPerView: 3,
+      spaceBetween: 5
+    }
+  }"
+>
+<ng-template swiperSlide *ngFor="let pokemon of getSliderPokes">
+    <div class="pokedex-s">
+        <a [routerLink]="['details-s', pokemon.status.id]" *ngIf="pokemon.status" class="pokedex__card-s">
+            <span class="pokedex__top-s">
+                <h2>{{ pokemon.name }}</h2>
+                <p>#0{{ pokemon.status.id }}</p>
+            </span>
+            <section class="pokedex__imagem-s">
+                <img [src]="pokemon.status.sprites.other.dream_world.front_default" alt="{{ pokemon.name }}">
+            </section>
+            <section class="pokedex__footer-s">
+                <span class="pokedex__footer-one-s">
+                    <h3>Altura:</h3>
+                    <p>{{ pokemon.status.height }} cm</p>
+                </span>
+                <span class="pokedex__footer-two-s">
+                    <h3>Peso:</h3>
+                    <p>{{ pokemon.status.weight }} kg</p>
+                </span>
+            </section>
+        </a>
+    </div>
+</ng-template>
+</swiper>
+
+-->

@@ -1,24 +1,36 @@
-.page-details {
-    background: #EFF4FA;
-    width: 100%;
-    height: 100%;
-}
-
-.container {
+.container-details {
     position: absolute;
-    height: 493px;
-    top: 16px;
-    left: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: #EFF4FA !important;
 }
 
-.sub-container1 img {
+.page-details {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 16px;
+    left: 9%;
+}
+
+.sub-container-d {
+    position: relative;
+    width: 560px !important;
+    height: 500px !important;
+}
+
+.sub-container-d img {
+    position: absolute;
     width: 110px;
     height: 78px;
     margin-left: 29px;
     cursor: pointer;
 }
 
-.text-container {
+.text-container-d {
+    position: absolute;
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 700;
@@ -26,19 +38,20 @@
     line-height: 48px;
     text-align: center;
     color: #233674;
-    margin-top: -25px;
-    width: 198px;
+    margin-top: 50px !important;
+    width: 160px;
 }
 
-.text-container__tipe {
+.text-container__tipe-d {
     position: absolute;
-    top: 110px;
+    top: 110px !important;
     display: flex;
     flex-direction: row;
-    gap: 264px;
+    width: 410px;
+    gap: 310px;
 }
 
-.text-container__tipe p {
+.text-container__tipe-d p {
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 400;
@@ -49,7 +62,7 @@
     min-inline-size: max-content;
 }
 
-.text-container__tipe p span {
+.text-container__tipe-d p span {
     padding: 0 4px;
     border-radius: 2px;
     font-family: 'Nunito';
@@ -60,28 +73,25 @@
     min-inline-size: max-content;
 }
 
-.text-container__about {
+.text-container__about-d {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 50px;
+    top: 175px !important;
 }
 
-.text-container__about h1 {
+.text-container__about-d h1 {
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
-    line-height: 30px;
     text-align: center;
     color: #233674;
 }
 
-.text-container__about p {
-    position: absolute;
-    top: 185px;
+.text-container__about-d p {
     width: 548px;
-    height: 66px;
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 600;
@@ -91,24 +101,78 @@
 }
 
 
-.text-container__bio {
+.text-container__bio-d {
     position: absolute;
-    top: 280px;
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 22px;
-    text-align: start;
-    color: #233674;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    top: 320px;
 }
 
-.pokem-id {
-    position: relative;
+.skills__titles {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 0px;
+}
+
+.skills__titles p {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 15px;
+    text-align: start;
+    color: #233674;
+    height: 21px;
+}
+
+.skills__bar,
+.skills__percentage {
+    height: 5px;
+    border-radius: .25rem;
+}
+
+.skills__bar {
+    width: 203px;
+    height: 21px;
+    background-color: #FBFDFF;
+}
+
+.skills__bar span {
+    display: block;
+    height: 21px;
+    border-radius: 2px;
+}
+
+.skills__percentage-vida {
+    background: #C4F789;
+}
+
+.skills__percentage-defesa {
+    background: #F7802A;
+}
+
+.skills__percentag-velocidade {
+    background: #49D0B0;
+}
+
+.skills__percentage-ataque {
+    background: #EA686D;
+}
+
+.skills__container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.pokem-id-d {
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    left: 65vw;
+    left: 50vw;
     top: 5vh;
     border: 1px solid #FFFFFF;
     border-radius: 50%;
@@ -116,22 +180,28 @@
     height: 419px;
 }
 
-.pokem-id__img {
+.pokem-id__img-d {
     position: absolute;
     max-width: 376px;
     max-height: 396px;
 }
 
-.main {
-    margin-top: 4%;
-    margin-left: 10%;
+.pokedex-procurados-d {
+    display: block;
+    width: 80%;
+    height: 400px;
+    margin-top: 33%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #EFF4FA;
 }
 
-.poke-title-button {
-    margin-bottom: 20px;
+.poke-title-button-d {
+    position: absolute;
+    bottom: 39%;
 }
 
-.poke-title-button h1 {
+.poke-title-button-d h1 {
     font-family: 'Nunito Sans', sans-serif;
     font-style: normal;
     font-weight: 700;

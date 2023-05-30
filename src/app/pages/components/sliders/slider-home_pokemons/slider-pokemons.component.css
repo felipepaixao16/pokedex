@@ -2,63 +2,12 @@
 @import 'swiper/css/navigation';
 @import 'swiper/css/pagination';
 
-:root {
-    --swiper-navigation-size: -10px;
-    /*
-    --swiper-navigation-color: var(--swiper-theme-color);
-    */
-  }
-
-.swiper {
-    top: -12px;
+.pokedex-s {
+    padding: 0px 32px 20px 0px;
+    display: inline-block;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
-    width: 32px;
-    height: 32px;
-    color: #FFF;
-    background: #EA686D;
-    border-radius: 50%;
-}
-
-.swiper-button-prev:after,
-.swiper-button-next:after {
-    font-size: 19px;
-    font-weight: bold;
-}
-
-.swiper-button-prev,
-.swiper-rtl .swiper-button-next {
-    position: relative;
-    margin-bottom: -37px;
-    bottom: 5px;
-    left: 92%;
-}
-
-.swiper-button-next,
-.swiper-rtl .swiper-button-prev {
-    position: relative;
-    margin-bottom: 10px;
-    bottom: 5px;
-    left: 95.5%;
-}
-
-.pokedex {
-    display: block;
-}
-
-
-.pokedex-procurados h1 {
-    font-family: 'Nunito Sans', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 30px;
-    color: #2F3E77;
-}
-
-.pokedex__card {
+.pokedex__card-s {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -70,7 +19,7 @@
     cursor: pointer;
 }
 
-.pokedex__top {
+.pokedex__top-s {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -78,7 +27,7 @@
     margin: 0 6px;
 }
 
-.pokedex__top h2 {
+.pokedex__top-s h2 {
     font-family: 'Nunito Sans', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -88,7 +37,7 @@
     color: #233674;
 }
 
-.pokedex__top p {
+.pokedex__top-s p {
     font-family: 'Nunito Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -98,14 +47,14 @@
     color: #233674;
 }
 
-.pokedex__imagem {
+.pokedex__imagem-s {
     width: 222px;
     height: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.pokedex__imagem img {
+.pokedex__imagem-s img {
     position: absolute;
     width: 124px;
     height: 122px;
@@ -113,7 +62,7 @@
     margin: 0;
 }
 
-.pokedex__footer {
+.pokedex__footer-s {
     margin: 136px 6px 0px 6px;
     display: flex;
     align-items: center;
@@ -122,7 +71,7 @@
     gap: 10px;
 }
 
-.pokedex__footer-one {
+.pokedex__footer-one-s {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -132,7 +81,7 @@
     margin-bottom: -30px;
 }
 
-.pokedex__footer-two {
+.pokedex__footer-two-s {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -141,7 +90,7 @@
     text-align: start;
 }
 
-.pokedex__footer h3 {
+.pokedex__footer-s h3 {
     color: #233674;
     font-family: 'Nunito';
     font-style: normal;
@@ -149,7 +98,7 @@
     font-size: 16px;
 }
 
-.pokedex__footer p {
+.pokedex__footer-s p {
     text-align: center;
     font-weight: 600;
     color: #233674;

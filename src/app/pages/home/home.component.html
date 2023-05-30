@@ -10,14 +10,20 @@
                 <button class="buscar" type="button" [disabled]="!busca_poke.value">Buscar</button>
             </form>
         </div>
+
+        <div class="img__home">
+            <img class="img1" src="assets/Rectangle1.png" alt="img1">
+            <img class="img2" src="assets/Rectangle2.png" alt="img2">
+            <img class="img3" src="assets/Rectangle3.png" alt="img3">
+        </div>
     </div>
 
     <div class="pokedex-procurados">
         <div class="pokedex__container">
             <div class="poke-title-button">
-                <h1>Mais procurados</h1>
+                <h1>Pokédex</h1>
             </div>  
-            <app-slider-pokemons></app-slider-pokemons>
+            <poke-list></poke-list>
         </div>
     </div>
 </div>

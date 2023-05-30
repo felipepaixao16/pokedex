@@ -1,16 +1,24 @@
 .home {
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    height: 100%;
-    background: #EFF4FA;
+    background: #EFF4FA !important;
 }
 
 .container {
     position: absolute;
-    width: 80%;
-    height: 493px;
+    display: flex;
+    flex-direction: row-reverse;
     top: 16px;
-    left: 10%;
+}
+
+.sub-container1 {
+    position: absolute;
+    width: 50%;
+    height: 500px;
+    left: 4%;
 }
 
 .sub-container1 img {
@@ -35,7 +43,7 @@
     color: #EA686D;
 }
 
-p {
+.sub-container1 p {
     width: 560px;
     height: 30px;
     margin: 25px 0px;
@@ -81,28 +89,54 @@ input {
     border-style: none;
 }
 
+.img__home {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    left: 100px;
+}
+
+.img__home img {
+    position: absolute;
+    width: 162px;
+    height: 302px;
+    filter: drop-shadow(0px 15px 15px rgba(234, 104, 109, 0.1));
+}
+
+.img1 {
+    top: 46px;
+}
+
+.img2 {
+   top: 114px;
+   left: 182px;
+}
+
+.img3 {
+    top: 31px;
+    left: 362px;
+ }
+
 .pokedex-procurados {
-    bottom: 250px;
+    display: block;
+    width: 80%;
+    height: 400px;
+    margin-top: 28%;
+    margin-left: auto;
+    margin-right: auto;
     background: #EFF4FA;
 }
 
 .poke-title-button {
-    margin-bottom: 20px;
+    position: absolute;
+    bottom: 43%;
 }
 
-.pokedex__container {
-    padding-left: 10%;
-    padding-top: 30%;
-}
-
-.pokedex-procurados h1 {
+.poke-title-buttons > h1 {
     font-family: 'Nunito Sans', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
     line-height: 30px;
-    /* identical to box height, or 100% */
-
-
     color: #2F3E77;
 }

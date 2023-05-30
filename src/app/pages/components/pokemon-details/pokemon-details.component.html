@@ -1,35 +1,57 @@
-<div class="page-details">
-        <div class="container">
-            <div class="sub-container1">
+<div class="container-details">
+    <div class="page-details">
+        <div class="container-d">
+            <div class="sub-container-d">
                 <a [routerLink]="['/home']"><img src="assets/Logo-03 1.svg" alt="logo-inicie"></a>
-                <p class="text-container">{{ pokemon[0].name | titlecase }}</p>
-                <span class="text-container__tipe">
+                <p class="text-container-d">{{ pokemon[0].name | titlecase }}</p>
+                <span class="text-container__tipe-d">
                     <p>Cod: #00{{ pokemon[0].id | number: '0.0-0' }}</p>
-                    <p>Tipo: <span style= "color: #ffff; background: {{ pokemon[1].color.name }};">{{ pokemon[0].types[0].type.name | titlecase }}</span></p>
+                    <p>Tipo: <span style= "color: #FFFFFF; background: {{ pokemon[1].color.name }};">{{ pokemon[0].types[0].type.name | titlecase }}</span></p>
                 </span>
-                <span class="text-container__about">
+                <span class="text-container__about-d">
                     <h1>Descrição</h1>
                     <p>"{{ pokemon[1].flavor_text_entries[51].flavor_text }}"</p>
                 </span>
-                <span class="text-container__bio">
-                    <p>Vida </p>
-                    <p>Defesa </p>
-                    <p>Velocidade </p>
-                    <p>Ataque </p>
-                </span>
+                <div class="text-container__bio-d">
+                    <div class="skills__titles">
+                        <p class="skills__name">Vida</p>
+                        <p class="skills__name">Defesa</p>
+                        <p class="skills__name">Velocidade</p>
+                        <p class="skills__name">Ataque</p>
+                    </div>
+
+                    <div class="skills__container">
+                        <div class="skills__bar">
+                            <span class="skills__percentage-vida" style="width: {{ pokemon[0].stats[0].base_stat }}%;"></span>
+                        </div>
+
+                        <div class="skills__bar">
+                            <span class="skills__percentage-defesa" style="width: {{ pokemon[0].stats[2].base_stat }}%;"></span>
+                        </div>
+
+                        <div class="skills__bar">
+                            <span class="skills__percentag-velocidade" style="width: {{ pokemon[0].stats[5].base_stat }}%;"></span>
+                        </div>
+
+                        <div class="skills__bar">
+                            <span class="skills__percentage-ataque" style="width: {{ pokemon[0].stats[1].base_stat }}%;"></span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <div class="pokem-id">
-            <img class="pokem-id__img" [src]="pokemon[0].sprites.other.dream_world.front_default" alt="{{ pokemon.name }}">
+    
+        <div class="pokem-id-d">
+            <img class="pokem-id__img-d" [src]="pokemon[0].sprites.other.dream_world.front_default" alt="{{ pokemon.name }}">
         </div>
-
-        <div class="main">
-            <div class="pokedex-procurados">
-                <div class="poke-title-button">
+    </div> 
+        <div class="pokedex-procurados-d">
+            <div class="pokedex__container-d">
+                <div class="poke-title-button-d">
                     <h1>Mais procurados</h1>
                 </div>  
-                <app-slider-pokemons></app-slider-pokemons>
+                <poke-list></poke-list>
             </div>
         </div>
-</div>
+</div>    
+
